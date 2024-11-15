@@ -1,0 +1,85 @@
+{
+    "@context": "\/api\/3\/contexts\/Workflow",
+    "@type": "Workflow",
+    "triggerLimit": null,
+    "name": "Delete PB After Upgrade",
+    "aliasName": null,
+    "tag": null,
+    "description": null,
+    "isActive": true,
+    "debug": false,
+    "singleRecordExecution": false,
+    "remoteExecutableFlag": false,
+    "parameters": [],
+    "synchronous": false,
+    "collection": "\/api\/3\/workflow_collections\/22f7ad9c-b604-4e65-808b-1a9f9a859caf",
+    "versions": [],
+    "triggerStep": "\/api\/3\/workflow_steps\/246f7eb0-9a2d-43d2-9ded-d48d9949a793",
+    "steps": [
+        {
+            "@type": "WorkflowStep",
+            "name": "QA",
+            "description": null,
+            "arguments": [],
+            "status": null,
+            "top": "95",
+            "left": "460",
+            "stepType": "\/api\/3\/workflow_step_types\/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+            "group": null,
+            "uuid": "3879d10a-9daf-45a3-8292-84e885636b88"
+        },
+        {
+            "@type": "WorkflowStep",
+            "name": "Start",
+            "description": null,
+            "arguments": {
+                "route": "b5ec8f44-d2b8-45be-8132-8a9a51f1878c",
+                "resources": [
+                    "alerts"
+                ],
+                "__triggerLimit": true,
+                "inputVariables": [],
+                "step_variables": {
+                    "input": {
+                        "params": [],
+                        "records": "{{vars.input.records}}"
+                    }
+                },
+                "triggerOnSource": true,
+                "executeButtonText": "Execute",
+                "noRecordExecution": true,
+                "showToasterMessage": {
+                    "visible": false,
+                    "messageVisible": true
+                },
+                "triggerOnReplicate": false,
+                "singleRecordExecution": false
+            },
+            "status": null,
+            "top": "40",
+            "left": "40",
+            "stepType": "\/api\/3\/workflow_step_types\/f414d039-bb0d-4e59-9c39-a8f1e880b18a",
+            "group": null,
+            "uuid": "246f7eb0-9a2d-43d2-9ded-d48d9949a793"
+        }
+    ],
+    "routes": [
+        {
+            "@type": "WorkflowRoute",
+            "name": "Start -> QA",
+            "targetStep": "\/api\/3\/workflow_steps\/3879d10a-9daf-45a3-8292-84e885636b88",
+            "sourceStep": "\/api\/3\/workflow_steps\/246f7eb0-9a2d-43d2-9ded-d48d9949a793",
+            "label": null,
+            "isExecuted": false,
+            "group": null,
+            "uuid": "89994bbd-fcbe-4d22-b7d5-4e64e9f9ba5d"
+        }
+    ],
+    "groups": [],
+    "priority": "\/api\/3\/picklists\/2b563c61-ae2c-41c0-a85a-c9709585e3f2",
+    "uuid": "c8411702-68c1-413b-9ff6-8f4489a1cac9",
+    "owners": [],
+    "isPrivate": false,
+    "deletedAt": null,
+    "recordTags": []
+}
