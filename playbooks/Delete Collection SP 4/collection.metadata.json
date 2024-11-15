@@ -1,0 +1,11 @@
+{
+    "@context": "\/api\/3\/contexts\/WorkflowCollection",
+    "@type": "WorkflowCollection",
+    "name": "Delete Collection SP 4",
+    "description": null,
+    "visible": true,
+    "image": null,
+    "uuid": "22f7ad9c-b604-4e65-808b-1a9f9a859caf",
+    "deletedAt": null,
+    "recordTags": []
+}
