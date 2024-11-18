@@ -1,0 +1,28 @@
+{
+    "name": "customSPUpgradability-4",
+    "version": "2.0.0",
+    "fsrMinCompatibility": "7.2.0",
+    "type": "solutionpack",
+    "local": true,
+    "label": "Custom SP Upgradability-4",
+    "dependencies": [],
+    "prerequisite": null,
+    "publisher": "Community",
+    "description": "",
+    "help": null,
+    "category": [],
+    "supportInfo": null,
+    "iconLarge": null,
+    "postInstallConfig": null,
+    "date": "2024-11-15T08:44:17+00:00",
+    "contents": {
+        "playbooks": [
+            {
+                "name": "Custom SP Upgrade 4"
+            },
+            {
+                "name": "Delete Collection SP 4"
+            }
+        ]
+    }
+}
